@@ -408,3 +408,10 @@
   border-bottom: 2px solid #eee;
   font-weight: bold;
 }
+
+.plane-body {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

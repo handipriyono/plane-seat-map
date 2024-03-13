@@ -8,7 +8,6 @@ import "./styles/component.css";
 import "./styles/style.css";
 import Header from "./components/Header";
 import InfoSymbol from "./components/InfoSymbol";
-import InfoUser from "./components/InfoUser";
 
 const PlaneSeat = () => {
   const { data, onUpdateSeat, isLoadingMutate } = useGetDataSeat();
@@ -22,19 +21,7 @@ const PlaneSeat = () => {
         }}
       >
         <Header />
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            paddingLeft: "100px",
-            fontWeight: "bold",
-            paddingTop: "15px",
-            justifyContent: "space-between",
-            fontSize: "16px",
-            alignItems: "center",
-            borderBottom: "1px solid #eee",
-          }}
-        >
+        <div className="heading-wrapper">
           <div style={{ display: "flex", flexDirection: "row" }}>
             <img src="./seat.png" alt="seat" height="50px" />
             <h2 style={{ paddingLeft: "10px" }}> Select your seat</h2>
@@ -43,26 +30,9 @@ const PlaneSeat = () => {
         </div>
         <InfoSymbol />
         {/* <InfoUser /> */}
-        <div
-          style={{
-            width: "500px",
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
+        <div className="plane-body">
           <div className="header-plane">
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignSelf: "flex-end",
-                width: "100%",
-                marginRight: "80px",
-                marginLeft: "80px",
-                justifyContent: "space-between",
-              }}
-            >
+            <div className="people-header">
               <div>
                 <img src="./people.png" />
               </div>
@@ -85,15 +55,7 @@ const PlaneSeat = () => {
           </div>
 
           <div className="footer-plane">
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignSelf: "flex-end",
-                width: "100%",
-                justifyContent: "space-between",
-              }}
-            >
+            <div className="people-footer">
               <div style={{ paddingLeft: "100px" }}>
                 <img src="./people.png" />
               </div>
@@ -101,17 +63,12 @@ const PlaneSeat = () => {
                 <img src="./people.png" />
               </div>
             </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-              }}
-            >
+            <div className="flex-between">
               <div className="label-red left head">Exit</div>
               <div className="label-red right head">Exit</div>
             </div>
           </div>
+
           <ModalInfo onUpdateSeat={onUpdateSeat} isSubmit={isLoadingMutate} />
         </div>
       </div>
