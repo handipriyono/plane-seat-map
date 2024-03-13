@@ -26,3 +26,7 @@ Explanation of Box (for seats):
 - Users can see a modal/popup after clicking the numbered seat box. Information about price, seat number, and class is displayed.
 - A button for booking the seat appears if the original seat-box color is green.
 - If a user clicks the "Book this Seat" button on that popup/modal, an API call (PUT) will be made to update the "occupied" value of that seat number to true. Consequently, the UI will refresh to display a red box (which was previously green).
+
+###
+
+domain: https://plane-seat-map.vercel.app/
