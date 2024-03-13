@@ -16,6 +16,7 @@ export default defineConfig(({ mode }) => {
     // vite config
     plugins: [react()],
     define: {
+      "process.env": env,
       __APP_ENV__: JSON.stringify(env.APP_ENV),
       VITE_API_GATEWAY: JSON.stringify(env.VITE_API_GATEWAY),
       VITE_API_KEY_SUPABASE: JSON.stringify(env.VITE_API_KEY_SUPABASE),
