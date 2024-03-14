@@ -11,9 +11,9 @@ const useGetDataSeat = () => {
       setIsModalActive(false);
       setLastSubmitted(selectedSeat);
       setSelectedSeat({} as TItem);
-      // setTimeout(() => {
-      //   window.scrollTo(0, 0);
-      // }, 2000);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 2000);
     },
   });
 

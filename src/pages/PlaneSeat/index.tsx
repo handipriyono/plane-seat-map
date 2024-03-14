@@ -8,6 +8,7 @@ import "./styles/component.css";
 import "./styles/style.css";
 import Header from "./components/Header";
 import InfoSymbol from "./components/InfoSymbol";
+import InfoUser from "./components/InfoUser";
 
 const PlaneSeat = () => {
   const { data, onUpdateSeat, isLoadingMutate } = useGetDataSeat();
@@ -29,7 +30,7 @@ const PlaneSeat = () => {
           <div></div>
         </div>
         <InfoSymbol />
-        {/* <InfoUser /> */}
+        <InfoUser />
         <div className="plane-body">
           <div className="header-plane">
             <div className="people-header">
