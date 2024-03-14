@@ -1,5 +1,4 @@
 import usePlaneSeatStore from "../stores/planeSeat.store";
-import { formatMoney } from "../../../commons/utils";
 
 const InfoUser = () => {
   const lastSubmitted = usePlaneSeatStore((state) => state.lastSubmitted);
